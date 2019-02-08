@@ -1,0 +1,18 @@
+package AssingmentDay1;
+
+import java.util.Scanner;
+
+public class CozaLozaWoza {
+	public static void show()
+	{
+		int lowerBound=1;
+		int upparBound=110;
+		for(int number=lowerBound;number<=upparBound;number++)
+		{
+			if(number+3%3==0){
+				System.out.println("coza");
+			}
+			//else if()
+		}
+	}
+}
