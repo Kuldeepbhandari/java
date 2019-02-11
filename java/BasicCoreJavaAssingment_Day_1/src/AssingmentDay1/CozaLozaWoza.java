@@ -5,42 +5,38 @@ import java.util.Scanner;
 public class CozaLozaWoza {
 	public static void show()
 	{
-		Scanner s=new Scanner(System.in);
+		/*Scanner s=new Scanner(System.in);
 		System.out.println("Enter a value");
 		int num=s.nextInt();
-	
-		int upparBound=110;
-			 
-			for(int j=1;j<=upparBound;j++)
-			{
-				 if(num%3==0&& num%7==0){
-					System.out.println("CozaWoza");	
-					break;
+	*/
+		
+			for(int num=1;num<=110;num++)
+			{		
+				 if(num%5==0&& num%7==0){
+					System.out.print(" CozaWoza ");	
 				}
 				else if(num%3==0&&num%5==0){
-					System.out.println("CozaLoza");
-					break;
+					System.out.print(" CozaLoza ");
 				}
 					else if(num%3==0){
-				System.out.println("coza");
-				break;
+				System.out.print(" coza ");
 					}
 					else if(num%5==0){
-				System.out.println("Loza");
-				break;
+				System.out.print(" Loza ");
 					}
 					else if(num%7==0){
-				System.out.println("Woza");
-				break;
+				System.out.print(" Woza ");
 					}
 					else if(num%3!=0||num%5!=0||num%7!=0){
-					System.out.println(num);
-					break;
+					System.out.print(num+" ");
 					}
 					else{
 				System.out.println("choose no between 1 to 110");
 					}
+				 
 					}
+			
+			
 		}
 	}
 

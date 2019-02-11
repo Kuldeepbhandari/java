@@ -20,8 +20,9 @@ public class ReverseString {
 	
 	 }
 	 */
+	 //***** Using String Builder ********
 	 StringBuilder rev=new StringBuilder();
-	 for(int i=strLen-1;i>=0;i--)
+	 for(int i=strLen-1;i>0;i--)
 	 {
 		 rev.append(inputSt.charAt(i));
 	 }

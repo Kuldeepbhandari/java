@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class TestPalindrome {
  public static void show()
  {
@@ -10,15 +9,13 @@ public class TestPalindrome {
 	 System.out.println("Enter a String Value");
 	 inputSt=s.nextLine();
 	 strLen=inputSt.length();
-	 String str="";
-	 /*StringBuilder  cons=new StringBuilder();
-	 StringBuilder vowel=new StringBuilder();
-	 StringBuilder str=new StringBuilder();*/
+	 //using string method
+	/* String str="";
 	 for(int i=strLen-1;i>=0;i--)
 	 {
 		 str=str+inputSt.charAt(i);
 	 }
-	 if(str==inputSt)
+	 if(inputSt.equals(str))
 	 {
 		 System.out.println("String is Paildrome");
 	 }
@@ -27,7 +24,20 @@ public class TestPalindrome {
 		 System.out.println("No");
 	 }
 	 System.out.println("The Value of String Reverse is "+str);
+	 */
 	 
-	
+	 
+	// ****************** using string buffer method ****************
+	 StringBuilder rev=new StringBuilder();
+	 for(int i=strLen-1;i>=0;i--){
+		 rev.append(inputSt.charAt(i)); 
+	 }
+	 if(inputSt.contentEquals(rev)){
+		 System.out.println("String is palindrome " );
+	 }
+	 else{
+		 System.out.println("String is not palindrome");
+	 }
+	 System.out.println("The Reverse String is "+rev);
  }
 }

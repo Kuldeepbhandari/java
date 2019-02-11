@@ -1,0 +1,9 @@
+
+public class HexaDecimal {
+	public int getNumericValue(char ch)
+	{
+		return ch;
+		
+	}
+	
+}
