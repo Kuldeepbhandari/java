@@ -1,12 +1,11 @@
 
 public class StringRevArray {
-	public static void show(){
-String [] StrRev={"kuldeep","gaurav","harit","abhi"};
+	public static void show(String[]args){
+	String StrRev=args[0];
 StringBuilder sb=new  StringBuilder();
-String s="";
-for(int i=StrRev.length-1;i>=0;i--)
-{
-	
+for(int i=0;i<=args.length;i++){
+	sb.append(StrRev.charAt(args.length)-i-1);
 }
+System.out.println(sb);
 }
 }

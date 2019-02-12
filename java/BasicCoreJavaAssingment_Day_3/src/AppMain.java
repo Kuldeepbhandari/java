@@ -11,11 +11,33 @@ public class AppMain {
 		
 		//************************** StringSum ***********************
 		/*System.out.println("************************** StringSum ********************");
-		StringSum.sum();*/
+		StringSum.sum(args);*/
+		
+		// *********************** StringRevArray *********************************
+		/*System.out.println("*********************** StringRevArray ********************");
+		StringRevArray.show(args);*/
 		
 		//********************* GradesStatistics **********************
-		System.out.println("****************** GradesStatistics ****************");
-		GradesStatistics.show();
+		/*System.out.println("****************** GradesStatistics ****************");
+		GradesStatistics.acceptGradees();;
+		System.out.println(GradesStatistics.sum());
+		System.out.println(GradesStatistics.average());
+		GradesStatistics.max();
+		GradesStatistics.stdDev();*/
+		
+		//************************* GradeHistoGram *******************************
+		/*System.out.println("********************** GradeHistoGram *****************************");
+		GradeHistoGram.readGrades("grades.in");
+		GradeHistoGram.printHistogramVertical();*/
+		
+		// ***************************** ReverseArrayMethod ********************************
+		/*System.out.println("*********************** ReverseArrayMethod ***************************");
+		ReverseArrayMethod.reverseArray();*/
+		
+		//******************* MakeMiddle *******************************
+		System.out.println("****************** MakeMiddle ********************");
+		MakeMiddle.makeMiddle();
+		
 	}
 
 }

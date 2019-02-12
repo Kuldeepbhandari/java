@@ -1,21 +1,24 @@
 
 public class StringSum {
-	public static void sum()
+	public static void sum(String args[])
 	{
-		String string="12345";
+		String string=args[0];
 		int sum=0;
-		int i=0;
-		int index=0;
-		for(i=string.length()-1;i>=0;i--)
+		int sum1=0;
+		int num=Integer.parseInt(string);
+		
+		for(int i=args.length;i>=0;i--)
 		{
-			sum+=Character.getNumericValue((string.charAt(string.length()-i-1)));
+			sum=Character.getNumericValue(args.length-1);
 		}
+		System.out.println(num);
+		System.out.println(sum);
 		/*for(int j=0;j<=string.length()-1;j++)
 		{
 			System.out.println(string.concat(string));
 			
 		}*/
-		//System.out.print("The sum of digit = "+string.concat(string)+" + " +sum);
+	
 		
 	}
 
