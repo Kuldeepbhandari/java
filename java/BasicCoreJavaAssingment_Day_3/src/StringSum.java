@@ -2,22 +2,20 @@
 public class StringSum {
 	public static void sum(String args[])
 	{
-		String string=args[0];
-		int sum=0;
-		int sum1=0;
-		int num=Integer.parseInt(string);
 		
-		for(int i=args.length;i>=0;i--)
+	int n;
+		int a=0;
+		int sum=0;
+		 
+				n=Integer.parseInt(args[0]);
+		 
+		while(n!=0)
 		{
-			sum=Character.getNumericValue(args.length-1);
+		a=n%10;
+		n=n/10;
+		sum=sum+a;
 		}
-		System.out.println(num);
-		System.out.println(sum);
-		/*for(int j=0;j<=string.length()-1;j++)
-		{
-			System.out.println(string.concat(string));
-			
-		}*/
+		System.out.println("Sum of digits: =" +a+" + " + ++a +" + "+ ++a +" + " + ++a +" + " + ++a + "  = " + sum);
 	
 		
 	}
